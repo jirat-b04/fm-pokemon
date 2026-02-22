@@ -9,6 +9,8 @@ import { RecentSearches } from "@/components/feat/search/RecentSearches";
 import { useRecentSearches } from "@/hooks/useRecentSearches";
 import { normalizePokemonName } from "@/utils/format";
 
+export const dynamic = "force-dynamic";
+
 export default function HomePage() {
   const { items, save, clear } = useRecentSearches();
   const searchParams = useSearchParams();

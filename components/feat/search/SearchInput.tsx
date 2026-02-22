@@ -75,7 +75,7 @@ export function SearchInput({ onSearch }: SearchInputProps) {
             onBlur={() => {
               setTimeout(() => setIsOpen(false), 120);
             }}
-            className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-lg shadow-sm focus:border-glow focus:outline-none focus:ring-2 focus:ring-glow/40"
+            className="w-full rounded-2xl border border-slate-200 bg-white px-4 py-3 text-lg text-ink shadow-sm focus:border-pokemon-red focus:outline-none focus:ring-2 focus:ring-pokemon-red/40"
           />
           {isOpen && suggestions.length > 0 && (
             <div className="absolute z-10 mt-2 w-full rounded-2xl border border-slate-200 bg-white p-2 shadow-lg">
@@ -101,7 +101,7 @@ export function SearchInput({ onSearch }: SearchInputProps) {
         <button
           type="submit"
           disabled={isPending}
-          className="rounded-2xl bg-ink px-5 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-halo transition hover:translate-y-[-1px] hover:bg-pokemon-red disabled:cursor-not-allowed disabled:opacity-70"
+          className="rounded-2xl bg-ink px-5 py-3 text-sm font-semibold uppercase tracking-wide text-white transition hover:translate-y-[-1px] hover:bg-pokemon-red/80 disabled:cursor-not-allowed disabled:opacity-70"
         >
           {isPending ? "Searching..." : "Search"}
         </button>
