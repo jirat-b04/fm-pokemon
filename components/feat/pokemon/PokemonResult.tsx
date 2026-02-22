@@ -57,7 +57,7 @@ export function PokemonResult() {
   if (!name) {
     return (
       <div className="rounded-3xl border border-dashed border-slate-200 bg-white/70 p-8 text-sm text-slate-500">
-        Start by searching for a Pokemon name. Try "pikachu" or "charizard".
+        Start by searching for a Pokemon name."
       </div>
     );
   }
