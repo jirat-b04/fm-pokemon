@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useCallback, useEffect, useMemo, useState, useTransition } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
@@ -57,6 +57,9 @@ export function SearchInput({ onSearch }: SearchInputProps) {
         submit(value);
       }}
     >
+      <label className="text-sm font-medium text-slate-200">
+        Search Pokemon by name
+      </label>
       <div className="relative flex w-full flex-col gap-3 sm:flex-row">
         <div className="relative flex-1">
           <input
@@ -98,7 +101,7 @@ export function SearchInput({ onSearch }: SearchInputProps) {
         <button
           type="submit"
           disabled={isPending}
-          className="rounded-2xl bg-ink px-5 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-halo transition hover:translate-y-[-1px] hover:bg-ocean disabled:cursor-not-allowed disabled:opacity-70"
+          className="rounded-2xl bg-ink px-5 py-3 text-sm font-semibold uppercase tracking-wide text-white shadow-halo transition hover:translate-y-[-1px] hover:bg-pokemon-red disabled:cursor-not-allowed disabled:opacity-70"
         >
           {isPending ? "Searching..." : "Search"}
         </button>

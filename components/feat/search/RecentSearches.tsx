@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { memo } from "react";
 
@@ -22,7 +22,7 @@ export const RecentSearches = memo(function RecentSearches({
         <button
           type="button"
           onClick={onClear}
-          className="text-ember hover:underline"
+          className="rounded-full border border-ember/40 bg-ember/10 px-4 py-1.5 text-lg font-semibold text-ember transition hover:bg-ember/20"
         >
           Clear
         </button>
@@ -33,7 +33,7 @@ export const RecentSearches = memo(function RecentSearches({
             key={item}
             type="button"
             onClick={() => onSelect(item)}
-            className="rounded-full border border-slate-200 bg-white px-3 py-1 text-sm text-slate-700 shadow-sm transition hover:border-glow hover:text-ink"
+            className="rounded-full border border-slate-200 bg-white px-3 py-1 text-sm text-slate-700 shadow-sm transition hover:bg-ink hover:text-white"
           >
             {item}
           </button>
