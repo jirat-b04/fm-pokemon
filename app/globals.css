@@ -1,0 +1,23 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #111827;
+  color: #f8fafc;
+}
+
+.bg-atmosphere {
+  background-image:
+    radial-gradient(700px circle at 80% 10%, rgba(228, 0, 43, 0.25), transparent 60%),
+    radial-gradient(700px circle at 10% 90%, rgba(255, 255, 255, 0.08), transparent 60%);
+}
+
+.text-shadow {
+  text-shadow: 0 1px 12px rgba(27, 75, 130, 0.35);
+}
